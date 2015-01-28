@@ -1,0 +1,26 @@
+[package]
+
+name = "gl_generator"
+version = "0.0.12"
+authors = ["Brendan Zabarauskas <bjzaba@yahoo.com.au>",
+        "Corey Richardson",
+        "Arseny Kapoulkine"
+]
+description = "Syntax extension for creating bindings to the Khronos OpenGL and related APIs"
+license = "Apache-2.0"
+
+[lib]
+name = "gl_generator"
+path = "lib.rs"
+
+[dependencies.gl_common]
+path = "../gl_common"
+version = "0.0.3"
+
+[dependencies.khronos_api]
+path = "../khronos_api"
+version = "0.0.4"
+
+[dependencies]
+log = "*"
+xml-rs = "*"
